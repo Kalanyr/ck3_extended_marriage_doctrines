@@ -227,6 +227,7 @@ ai_make_concubine_interaction = {
 
 offer_concubine = {
 	category = interaction_category_diplomacy
+	icon = concubine_icon
 
 	desc = offer_concubine_desc
 

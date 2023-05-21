@@ -151,8 +151,9 @@ test_cultural_marriage_tradition_hof_monogamous_decision = {
 
 	is_shown = {
 		debug_only = yes
-		exists = faith.religious_head
-		faith.religious_head.culture = {  NOT = { has_cultural_tradition = tradition_monogamous } }
+		faith.religious_head ?= {
+			culture = {  NOT = { has_cultural_tradition = tradition_monogamous } }
+		}
 
 	}
 
@@ -185,9 +186,9 @@ test_cultural_marriage_tradition_hof_polygamous_decision = {
 
 	is_shown = {
 		debug_only = yes
-		exists = faith.religious_head
-		faith.religious_head.culture = {  NOT = { has_cultural_tradition = tradition_polygamous } }
-
+		faith.religious_head ?= {
+			culture = {  NOT = { has_cultural_tradition = tradition_polygamous } }
+		}
 	}
 
 	is_valid_showing_failures_only = {
@@ -219,9 +220,9 @@ test_cultural_marriage_tradition_hof_concubines_decision = {
 
 	is_shown = {
 		debug_only = yes
-		exists = faith.religious_head
-		faith.religious_head.culture = {  NOT = { has_cultural_tradition = tradition_concubines } }
-
+		faith.religious_head  ?= {
+			culture = {  NOT = { has_cultural_tradition = tradition_concubines } }
+		}
 	}
 
 	is_valid_showing_failures_only = {
@@ -253,9 +254,9 @@ test_cultural_marriage_tradition_hof_harem_decision = {
 
 	is_shown = {
 		debug_only = yes
-		exists = faith.religious_head
-		faith.religious_head.culture = {  NOT = { has_cultural_tradition = tradition_harem } }
-
+		faith.religious_head ?= {
+			culture = {  NOT = { has_cultural_tradition = tradition_harem } }
+		}
 	}
 
 	is_valid_showing_failures_only = {

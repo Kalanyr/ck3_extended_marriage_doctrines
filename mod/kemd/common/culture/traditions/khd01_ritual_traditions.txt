@@ -19,14 +19,14 @@ tradition_monogamous = {
 					OR = {
 						NOT = { exists = scope:replacing }
 						NOR = {
-							scope:replacing = flag:tradition_polygamous
-							scope:replacing = flag:tradition_concubines
+							scope:replacing = culture_tradition:tradition_polygamous
+							scope:replacing = culture_tradition:tradition_concubines
 						}
 					}
 				}
 				NOR = {
-					any_in_list = { list = traits this = flag:tradition_polygamous }
-					any_in_list = { list = traits this = flag:tradition_concubines }
+					culture_tradition:tradition_polygamous = { is_in_list = traits }
+					culture_tradition:tradition_concubines = { is_in_list = traits }
 				}
 			}
 		}
@@ -35,7 +35,7 @@ tradition_monogamous = {
 		custom_tooltip = {
 			text = only_one_marriage_tradition_allowed
 			NOT = { # Only blocks polygamous to avoid duplicate warnings, but is blocked by concubines
-				any_in_list = { list = traits this = flag:tradition_polygamous }
+				culture_tradition:tradition_polygamous = { is_in_list = traits }
 			}
 		}
 	}
@@ -94,14 +94,14 @@ tradition_polygamous = {
 					OR = {
 						NOT = { exists = scope:replacing }
 						NOR = {
-							scope:replacing = flag:tradition_monogamous
-						scope:replacing = flag:tradition_concubines
+							scope:replacing = culture_tradition:tradition_monogamous
+							scope:replacing = culture_tradition:tradition_concubines
 						}
 					}
 				}
 				NOR = {
-					any_in_list = { list = traits this = flag:tradition_monogamous }
-					any_in_list = { list = traits this = flag:tradition_concubines }
+					culture_tradition:tradition_monogamous = { is_in_list = traits }
+					culture_tradition:tradition_concubines = { is_in_list = traits }
 				}
 			}
 		}
@@ -110,7 +110,7 @@ tradition_polygamous = {
 		custom_tooltip = {
 			text = only_one_marriage_tradition_allowed
 			NOT = { # Only blocks concubines to avoid duplicate warnings, but is blocked by monogamous
-				any_in_list = { list = traits this = flag:tradition_concubines }
+				culture_tradition:tradition_concubines = { is_in_list = traits }
 			}
 		}
 	}
@@ -168,14 +168,14 @@ tradition_concubines = {
 					OR = {
 						NOT = { exists = scope:replacing }
 						NOR = {
-							scope:replacing = flag:tradition_monogamous
-							scope:replacing = flag:tradition_polygamous
+							scope:replacing = culture_tradition:tradition_monogamous
+							scope:replacing = culture_tradition:tradition_polygamous
 						}
 					}
 				}
 				NOR = {
-					any_in_list = { list = traits this = flag:tradition_monogamous }
-					any_in_list = { list = traits this = flag:tradition_polygamous }
+					culture_tradition:tradition_monogamous = { is_in_list = traits }
+					culture_tradition:tradition_polygamous = { is_in_list = traits }
 				}
 			}
 		}
@@ -184,7 +184,7 @@ tradition_concubines = {
 		custom_tooltip = {
 			text = only_one_marriage_tradition_allowed
 			NOT = { # Only blocks monogamous to avoid duplicate warnings, but is blocked by polygamous
-				any_in_list = { list = traits this = flag:tradition_monogamous }
+				culture_tradition:tradition_monogamous = { is_in_list = traits }
 			}
 		}
 	}
@@ -248,16 +248,16 @@ tradition_harem = {
 					OR = {
 						NOT = { exists = scope:replacing }
 						NOR = {
-							scope:replacing = flag:tradition_monogamous
-							scope:replacing = flag:tradition_polygamous
-							scope:replacing = flag:tradition_concubines
+							scope:replacing = culture_tradition:tradition_monogamous
+							scope:replacing = culture_tradition:tradition_polygamous
+							scope:replacing = culture_tradition:tradition_concubines
 						}
 					}
 				}
 				NOR = {
-					any_in_list = { list = traits this = flag:tradition_monogamous }
-					any_in_list = { list = traits this = flag:tradition_polygamous }
-					any_in_list = { list = traits this = flag:tradition_concubines }
+					culture_tradition:tradition_monogamous = { is_in_list = traits }
+					culture_tradition:tradition_polygamous = { is_in_list = traits }
+					culture_tradition:tradition_concubines = { is_in_list = traits }
 				}
 			}
 		}
@@ -266,9 +266,9 @@ tradition_harem = {
 		custom_tooltip = {
 			text = only_one_marriage_tradition_allowed
 			NOR = { # Only blocks monogamous to avoid duplicate warnings, but is blocked by polygamous
-					any_in_list = { list = traits this = flag:tradition_monogamous }
-					any_in_list = { list = traits this = flag:tradition_polygamous }
-					any_in_list = { list = traits this = flag:tradition_concubines }
+					culture_tradition:tradition_monogamous = { is_in_list = traits }
+					culture_tradition:tradition_polygamous = { is_in_list = traits }
+					culture_tradition:tradition_concubines = { is_in_list = traits }
 			}
 		}
 	}
@@ -334,16 +334,16 @@ tradition_paramourial = {
 					OR = {
 						NOT = { exists = scope:replacing }
 						NOR = {
-							scope:replacing = flag:tradition_monogamous
-							scope:replacing = flag:tradition_polygamous
-							scope:replacing = flag:tradition_concubines
+							scope:replacing = culture_tradition:tradition_monogamous
+							scope:replacing = culture_tradition:tradition_polygamous
+							scope:replacing = culture_tradition:tradition_concubines
 						}
 					}
 				}
 				NOR = {
-					any_in_list = { list = traits this = flag:tradition_monogamous }
-					any_in_list = { list = traits this = flag:tradition_polygamous }
-					any_in_list = { list = traits this = flag:tradition_concubines }
+					culture_tradition:tradition_monogamous = { is_in_list = traits }
+					culture_tradition:tradition_polygamous = { is_in_list = traits }
+					culture_tradition:tradition_concubines = { is_in_list = traits }
 				}
 			}
 		}
@@ -352,9 +352,9 @@ tradition_paramourial = {
 		custom_tooltip = {
 			text = only_one_marriage_tradition_allowed
 			NOR = { # Only blocks monogamous to avoid duplicate warnings, but is blocked by polygamous
-					any_in_list = { list = traits this = flag:tradition_monogamous }
-					any_in_list = { list = traits this = flag:tradition_polygamous }
-					any_in_list = { list = traits this = flag:tradition_concubines }
+					culture_tradition:tradition_monogamous = { is_in_list = traits }
+					culture_tradition:tradition_polygamous = { is_in_list = traits }
+					culture_tradition:tradition_concubines = { is_in_list = traits }
 			}
 		}
 	}

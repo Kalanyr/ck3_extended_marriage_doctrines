@@ -7,9 +7,6 @@
  doctrine_parameter_allows_polygamy:0 ""
  doctrine_parameter_allows_concubinage:0 ""
 
- doctrine_parameter_allows_polygamy:0 ""
- doctrine_parameter_allows_concubinage:0 ""
- 
  doctrine_parameter_allows_emperor_concubine_prestige_penalty_offset:0 ""
  doctrine_parameter_allows_king_concubine_prestige_penalty_offset:0 ""
 
@@ -93,8 +90,8 @@
  doctrine_concubines_127_name:0 "Hecatontakaiicosikaiheptagamous"
  doctrine_concubines_127_desc:0 "A harem fit for a living god! With intrigues fit for the sharpest mind."
  
- doctrine_marriage_grand_celebration_name:0 "Grand Celebration"
- doctrine_marriage_grand_celebration_disallowed_name:0 "Disallowed"
- doctrine_marriage_grand_celebration_disallowed_desc:0 "Marriage is not the concern of the realm."
- doctrine_marriage_grand_celebration_first_name:0 "First Marriage"
- doctrine_marriage_grand_celebration_first_desc:0 "It is proper for the realm to celebrate such a significant event in the life of the ruler."
+ doctrine_marriage_realm_celebration_name:0 "Realm Celebration"
+ doctrine_marriage_realm_celebration_disallowed_name:0 "Disallowed"
+ doctrine_marriage_realm_celebration_disallowed_desc:0 "A Ruler's marriage is not the concern of the realm."
+ doctrine_marriage_realm_celebration_first_name:0 "First Marriage"
+ doctrine_marriage_realm_celebration_first_desc:0 "It is proper for the realm to celebrate such a significant event in the life of their ruler."

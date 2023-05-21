@@ -1,7 +1,7 @@
 ﻿marriage_interaction_on_accept_effect = {
 	#Use hook
 	if = {
-		limit = { always = scope:marriage_hook }
+		limit = { always = scope:hook }
 		scope:actor = {
 			use_hook = scope:recipient
 		}
@@ -49,6 +49,17 @@
 			}
 		}
 	}
+	# A Grand Wedding was promised
+	if = {
+		limit = {
+			scope:grand_wedding_promise = yes
+		}
+		set_grand_wedding_betrothal_variables = {
+			SPOUSE_1 = scope:secondary_actor
+			SPOUSE_2 = scope:secondary_recipient
+			HOST = scope:actor
+		}
+	}
 
 	#Marriage notification events
 	hidden_effect = {
@@ -63,6 +74,8 @@
 						OR = {
 							scope:secondary_actor = { is_adult = no }
 							scope:secondary_recipient = { is_adult = no }
+							scope:secondary_actor = { has_been_promised_grand_wedding = yes }
+							scope:secondary_recipient = { has_been_promised_grand_wedding = yes }
 						}
 					}
 					send_interface_toast = {
@@ -134,6 +147,53 @@
 						add_opinion = {
 							target = scope:secondary_actor
 							modifier = relative_in_blasphemous_union_opinion
+						}
+					}
+				}
+			}
+		}
+		# Courtly vassals like grand weddings
+		scope:secondary_actor = {
+			if = {
+				limit = {
+					any_vassal = {
+						has_vassal_stance = courtly
+					}
+				}
+				if = {
+					limit = {
+						has_been_promised_grand_wedding = yes
+					}
+					every_vassal = {
+						limit = {
+							has_vassal_stance = courtly
+						}
+						add_opinion = {
+							target = scope:secondary_actor
+							modifier = prestigious_wedding_opinion
+						}
+					}
+				}
+			}
+		}
+		scope:secondary_recipient = {
+			if = {
+				limit = {
+					any_vassal = {
+						has_vassal_stance = courtly
+					}
+				}
+				if = {
+					limit = {
+						has_been_promised_grand_wedding = yes
+					}
+					every_vassal = {
+						limit = {
+							has_vassal_stance = courtly
+						}
+						add_opinion = {
+							target = scope:secondary_recipient
+							modifier = prestigious_wedding_opinion
 						}
 					}
 				}

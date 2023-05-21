@@ -43,10 +43,10 @@ khd_set_doctrines = {
 					}
 					if = {
 						limit = {
-							NOT = { has_doctrine = doctrine_marriage_grand_celebration_disallowed }
-							NOT = { has_doctrine = doctrine_marriage_grand_celebration_first }
+							NOT = { has_doctrine = doctrine_marriage_realm_celebration_disallowed }
+							NOT = { has_doctrine = doctrine_marriage_realm_celebration_first }
 						}
-						add_doctrine = doctrine_marriage_grand_celebration_first
+						add_doctrine = doctrine_marriage_realm_celebration_first
 					}	
 				} 
 				else_if = {
@@ -76,10 +76,10 @@ khd_set_doctrines = {
 					}
 					if = {
 						limit = {
-							NOT = { has_doctrine = doctrine_marriage_grand_celebration_disallowed }
-							NOT = { has_doctrine = doctrine_marriage_grand_celebration_first }
+							NOT = { has_doctrine = doctrine_marriage_realm_celebration_disallowed }
+							NOT = { has_doctrine = doctrine_marriage_realm_celebration_first }
 						}
-						add_doctrine = doctrine_marriage_grand_celebration_disallowed
+						add_doctrine = doctrine_marriage_realm_celebration_disallowed
 					}					
 				}
 				else_if = {
@@ -108,10 +108,10 @@ khd_set_doctrines = {
 					}
 					if = {
 						limit = {
-							NOT = { has_doctrine = doctrine_marriage_grand_celebration_disallowed }
-							NOT = { has_doctrine = doctrine_marriage_grand_celebration_first }
+							NOT = { has_doctrine = doctrine_marriage_realm_celebration_disallowed }
+							NOT = { has_doctrine = doctrine_marriage_realm_celebration_first }
 						}
-						add_doctrine = doctrine_marriage_grand_celebration_disallowed
+						add_doctrine = doctrine_marriage_realm_celebration_disallowed
 					}	
 				}
 			}

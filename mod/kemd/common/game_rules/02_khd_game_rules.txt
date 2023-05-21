@@ -1,4 +1,8 @@
 ﻿khd_allowed_doctrines = {
+	categories = {
+		faith tweaks culture
+	}
+
 	default = khd_allowed_doctrines_standard
 	khd_allowed_doctrines_standard = {
 	
@@ -16,6 +20,10 @@
 }
 
 khd_combine_polygamy_concubines = {
+	categories = {
+		faith game_modes culture difficulty
+	}
+
 	default = khd_combine_polygamy_concubines_disallowed
 	khd_combine_polygamy_concubines_disallowed = {
 	
@@ -28,6 +36,10 @@ khd_combine_polygamy_concubines = {
 }
 
 khd_marriage_celebration = {
+	categories = {
+		faith tweaks difficulty
+	}
+
 	default = khd_marriage_celebration_standard
 	khd_marriage_celebration_standard = {
 	

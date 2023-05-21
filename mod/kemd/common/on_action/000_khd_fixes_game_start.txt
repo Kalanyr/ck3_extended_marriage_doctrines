@@ -8,7 +8,7 @@
 khd_fixes = {
 	effect = {
 		#Fix Zoroastrianism double doctrines
-		religion:zoroastrianism_religion = {
+		religion:zoroastrianism_religion ?= {
 			every_faith = {
 				if = {
 					limit = {
