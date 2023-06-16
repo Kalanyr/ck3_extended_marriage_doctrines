@@ -87,6 +87,14 @@ khd_set_doctrines = {
 						has_doctrine = doctrine_polygamy
 					}
 					remove_doctrine = doctrine_polygamy
+					#if = {
+				    #  	limit = { this = faith:kabarism }
+					#	add_doctrine = doctrine_polygamy_8
+					#	add_doctrine = doctrine_concubines_3
+					#}
+					#else = {
+					#	add_doctrine = doctrine_polygamy_4
+					#}
 					add_doctrine = doctrine_polygamy_4
 					if = {
 						limit = {

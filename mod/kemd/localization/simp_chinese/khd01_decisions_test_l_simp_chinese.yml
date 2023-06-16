@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
- test_cultural_marriage_tradition_removal_decision:0 "移除文化婚姻传统"
- test_cultural_marriage_tradition_removal_decision_tooltip:0 "移除文化惯例事件"
+ test_cultural_marriage_tradition_removal_decision:0 "文化移除婚姻传统"
+ test_cultural_marriage_tradition_removal_decision_tooltip:0 "文化移除传统事件"
  test_cultural_marriage_tradition_removal_decision_desc:0 "移除在文化特质中的文化惯例事件99个来用于测试"
  test_cultural_marriage_tradition_removal_effect_tooltip:0 "移除文化惯例事件99个"
  test_cultural_marriage_tradition_removal_decision_confirm:0 "我想被骚扰！"

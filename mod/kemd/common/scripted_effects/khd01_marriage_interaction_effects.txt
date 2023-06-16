@@ -58,6 +58,7 @@
 			SPOUSE_1 = scope:secondary_actor
 			SPOUSE_2 = scope:secondary_recipient
 			HOST = scope:actor
+			PROMISEE = scope:recipient
 		}
 	}
 

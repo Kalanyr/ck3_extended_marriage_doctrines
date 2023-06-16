@@ -41516,7 +41516,10 @@ scripted_effect hold_court_attraction_dummy_gender_effect = { # Determine random
 }
 
 scripted_trigger polygamy_accepted_trigger = { # Is polygamy accepted?
-	accepts_polygamy = yes
+	OR = {
+		culture = { has_cultural_tradition = tradition_polygamous }
+		faith = { has_doctrine = doctrine_polygamy }
+	}
 }
 
 scripted_trigger hold_court_8240_covetable_spouse_trigger = { # Is polygamous and has an adult non-primary spouse?
@@ -42231,8 +42234,10 @@ hold_court.8241 = {
 ##################################################
 
 scripted_trigger concubinage_accepted_trigger = {
-	accepts_concubinage = yes
-
+	OR = {
+		culture = { has_cultural_tradition = tradition_concubines }
+		faith = { has_doctrine = doctrine_concubines }
+	}
 }
 
 scripted_trigger hold_court_8250_concubinage_trigger = { # Is character able to have more concubines?

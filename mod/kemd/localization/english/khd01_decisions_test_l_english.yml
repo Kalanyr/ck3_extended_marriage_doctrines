@@ -45,5 +45,12 @@
  test_cultural_marriage_tradition_hof_harem_decision_desc:0 "Give Managed Harem Cultural Marriage Tradition  to Head of Faith's Culture"
  test_cultural_marriage_tradition_hof_harem_decision_confirm:0 "I want my HoF have a Harem!"
  
- #doctrine_concubines_name:2 "Trigamous Concubinage"
- #doctrine_concubines_desc:2 "Stupid test"
+ test_jewish_polygamous_loss_decision_original:0 "Test Original Jewish Polygamy Loss Event"
+ test_jewish_polygamous_loss_decision_original_tooltip:0 "Run the base game Jewish Polygamy Loss Event"
+ test_jewish_polygamous_loss_decision_original_desc:0 "Run the base game Jewish Polygamy Loss Event"
+ test_jewish_polygamous_loss_decision_original_confirm:0 "I want to test the Original Jeiwsh Polygamy Loss Events"
+ 
+ test_jewish_polygamous_loss_decision:0 "Test Jewish Polygamy Loss Event"
+ test_jewish_polygamous_loss_decision_tooltip:0 "Run the Jewish Polygamy Loss Event"
+ test_jewish_polygamous_loss_decision_desc:0 "Run the Jewish Polygamy Loss Event"
+ test_jewish_polygamous_loss_decision_confirm:0 "I want to test the Jewish Polygamy Loss Events"
