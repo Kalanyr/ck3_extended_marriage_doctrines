@@ -1,9 +1,9 @@
-version="1.1.0RC1"
+version="1.2.0"
 tags={
 	"Religion"
 	"Fixes"
 }
 name="Extended Marriage Doctrines"
 picture="thumbnail.png"
-supported_version="1.9.*"
+supported_version="1.10.*"
 path="mod/kemd"
