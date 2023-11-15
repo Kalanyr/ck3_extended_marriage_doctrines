@@ -3,16 +3,16 @@
  tradition_harem_desc:0 "In this culture one tends to keep a number of concubines organised by multiple spouses, regardless of faith."
 
  tradition_parmourial_name:0 "Paramourial Concubinage"
- tradition_paramourial_desc:0 "In this culture one tens to keep a concubine regardless of faith."
+ tradition_paramourial_desc:0 "In this culture one tends to keep a concubine regardless of faith."
 
  culture_parameter_allows_concubinage:0 ""
  culture_parameter_allows_polygamy:0 ""
 
- cultural_parameter_allows_emperor_concubine_prestige_penalty_offset:0 ""
- cultural_parameter_allows_king_concubine_prestige_penalty_offset:0 ""
+ culture_parameter_allows_imperial_concubine_prestige_penalty_offset:0 ""
+ culture_parameter_allows_royal_concubine_prestige_penalty_offset:0 ""
 
- cultural_parameter_disallows_emperor_concubine_prestige_penalty_offset:0 ""
- cultural_parameter_disallows_king_concubine_prestige_penalty_offset:0 ""
+ culture_parameter_disallows_imperial_concubine_prestige_penalty_offset:0 ""
+ culture_parameter_disallows_royal_concubine_prestige_penalty_offset:0 ""
 
 
  culture_tradition_events.0100.tradition_polygamous_needs_concubines:0 ""Your practice of polygamy alone is not supported by [faith_scope.GetAdjective] doctrine, only through the addition of concubinage will [faith_scope.HighGodName] smile upon your people!! I only wish for your salvation. Please, lead your people into the light and take up concubines!" the missive reads."

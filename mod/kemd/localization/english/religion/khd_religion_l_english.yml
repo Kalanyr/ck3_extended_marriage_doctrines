@@ -7,11 +7,11 @@
  doctrine_parameter_allows_polygamy:0 ""
  doctrine_parameter_allows_concubinage:0 ""
 
- doctrine_parameter_allows_emperor_concubine_prestige_penalty_offset:0 ""
- doctrine_parameter_allows_king_concubine_prestige_penalty_offset:0 ""
+ doctrine_parameter_allows_imperial_concubine_prestige_penalty_offset:0 ""
+ doctrine_parameter_allows_royal_concubine_prestige_penalty_offset:0 ""
 
- 
- doctrine_parameter_number_of_consorts_0:0 "Rulers, regardless of [gender_law|E], are not allowed to take any [concubines|E]"
+ #doctrine_parameter_number_of_consorts_0:0 "Rulers, regardless of [gender_law|E], are not allowed to take any [concubines|E]" 
+ doctrine_parameter_number_of_consorts_zero_loc:0 "Rulers, regardless of [gender_law|E], are not allowed to take any [concubines|E]"
 
  doctrine_polygamy_2_name:0 "Bigamous"
  doctrine_polygamy_2_desc:0 "Marriage is a bond to be shared, not to be hoarded. Therefore it must be holy to be twice married."

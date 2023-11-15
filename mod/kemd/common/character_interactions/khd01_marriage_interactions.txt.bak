@@ -677,11 +677,6 @@ offer_concubine = {
 			scope:actor = { has_strong_hook = scope:recipient }
 			desc = SCHEME_STRONG_HOOK_USED
 		}
-
-		# Unity modifiers
-		evaluate_action_increasing_house_unity = {
-			VALUE = 100
-		}
 	}
 
 	ai_potential = {
@@ -781,11 +776,6 @@ offer_concubine = {
 			}
 		}
 
-		# Unity modifiers
-		evaluate_action_increasing_house_unity = {
-			VALUE = 100
-		}
-
 		modifier = { # No if it's a same-sex concubinage and actor isn't accepting of it
 			factor = 0
 			scope:actor = {
@@ -852,15 +842,6 @@ offer_concubine = {
 	
 	on_accept = {
 		concubine_offer_on_accept_effect = yes
-
-		# If we're a clan this interaction affects unity
-		add_clan_unity_interaction_effect = {
-			CHARACTER = scope:actor
-			TARGET = scope:recipient
-			VALUE = minor_unity_gain
-			DESC = clan_unity_concubinage_offer.desc
-			REVERSE_NON_HOUSE_TARGET = no
-		}
 	}
 
 	on_decline = {
@@ -872,15 +853,6 @@ offer_concubine = {
 				left_icon = scope:secondary_actor
 				custom_tooltip = msg_concubine_offer_rejected
 			}
-		}
-
-		# If we're a clan this interaction affects unity
-		add_clan_unity_interaction_effect = {
-			CHARACTER = scope:actor
-			TARGET = scope:recipient
-			VALUE = medium_unity_loss
-			DESC = clan_unity_concubinage_offer_decline.desc
-			REVERSE_NON_HOUSE_TARGET = no
 		}
 	}
 

@@ -1702,7 +1702,8 @@ doctrine_concubinage_type = {
 			}
 		}
 		parameters = {
-			number_of_consorts = 0
+			#number_of_consorts = 0
+			number_of_consorts_zero_loc = yes
 		}
 	}
 	doctrine_concubines_1 = {

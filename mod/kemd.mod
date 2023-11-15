@@ -5,5 +5,5 @@ tags={
 }
 name="Extended Marriage Doctrines"
 picture="thumbnail.png"
-supported_version="1.10.*"
+supported_version="1.11.*"
 path="mod/kemd"
